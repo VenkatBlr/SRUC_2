@@ -8,6 +8,7 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class ChartsComponent implements OnInit {
+    public aboutus_writeup:any;
     // bar chart
     public barChartOptions: any = {
         scaleShowVerticalLines: false,
@@ -116,5 +117,6 @@ export class ChartsComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.aboutus_writeup = "SRI  RAMANAVAMI  UTSAVA COMMITTEE (SRUC),  Hari Nagar, New Delhi was established in the year 1983 and is popularly known not only in the vicinity of Hari Nagar but also in the capital city of Delhi for its religious and cultural activities. SRUC has been doing religious &  cultural activities for the past 32 years. Needless to mention, the main aim of the Committee is to provide a forum for exchange of spiritual thought and culture. It has always been our endeavour to promote & encourage young and budding artists.As the name suggests the committee has been conducting Sita Kalyanam in the Traditional Sampradaya form coinciding with Sri Ramanavami every year under an able Bagawathar in a very grand manner. Brahmasri Subbarama Bagawathar of New Delhi was instrumental in introducing us to the Traditional Bajana Sampradaya of Pudukottai and he himself has conducted many Sita Kalyanams of SRUC. We also had the opportunity to invite Bagawathals like: Sri A.L.Krishnamurthy, Sant Muralidas, Erode Rajamani,  Kadayanallur Rajagopal, O.S.Sundar, Udayalur  Kalyanaraman,  ---------- Dakshinamurthy, Tirupanithura Ramachandran, A.K.Rajasimhan, Cuddalore Gopi, to name a few.";
     }
 }

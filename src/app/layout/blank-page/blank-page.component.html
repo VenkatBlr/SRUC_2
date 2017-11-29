@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+div img{ display: block;float: left;margin-right: 20px;}
+
+</style>
+</head>
+<body>
+<h2>{{albname}}</h2>
+<div *ngFor="let image of _albums; let i=index">
+
+  <img [src]="image.src" (click)="open(i)" width = "100px" height = "100px" />
+</div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+
+
+
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="assets/img/Ramaphotos/rama1.jpg" width = "100px" height = "100px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/Ramaphotos/rama2.jpg" width = "100px" height = "100px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/Ramaphotos/rama3.jpg" width = "100px" height = "100px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="assets/img/Ramaphotos/rama4.jpg" width = "100px" height = "100px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="assets/img/Ramaphotos/rama1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="assets/img/Ramaphotos/rama2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="assets/img/Ramaphotos/rama3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="assets/img/Ramaphotos/rama4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <!-- <div class="column">
+      <img class="demo cursor" src="assets/img/Ramaphotos/temp1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/Ramaphotos/temp2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/Ramaphotos/temp3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="assets/img/Ramaphotos/temp4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div> -->
+  </div>
+</div>
+
+
+    
+</body>
+</html>

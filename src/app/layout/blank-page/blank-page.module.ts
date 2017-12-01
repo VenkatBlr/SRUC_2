@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { BlankPageRoutingModule } from './blank-page-routing.module';
 import { BlankPageComponent } from './blank-page.component';
-import { LightboxModule } from 'angular2-lightbox';
+// import { LightboxModule } from 'angular2-lightbox';
 
 @NgModule({
   imports: [
     CommonModule,
-    BlankPageRoutingModule,
-    LightboxModule
+    BlankPageRoutingModule
+ //   LightboxModule
   ],
   declarations: [BlankPageComponent]
 })

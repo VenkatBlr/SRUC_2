@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Lightbox } from 'angular2-lightbox';
+// import { Lightbox } from 'angular2-lightbox';
 
 @Component({
     selector: 'app-blank-page',
@@ -24,7 +24,8 @@ export class BlankPageComponent implements OnInit {
         ];
 
 
-    constructor(private _lightbox: Lightbox, private route: ActivatedRoute) {
+   //  constructor(private _lightbox: Lightbox, private route: ActivatedRoute) {
+    constructor( private route: ActivatedRoute) {
 
         // for (let i = 0; i < 4; i++) {
         //     this.addSlide();
@@ -63,6 +64,6 @@ export class BlankPageComponent implements OnInit {
           open(index: number): void {
               // open lightbox 
               console.log(this.albname);
-              this._lightbox.open(this._albums, 1, { wrapAround: true, showImageNumberLabel: true });
+          //    this._lightbox.open(this._albums, 1, { wrapAround: true, showImageNumberLabel: true });
             }
 }
